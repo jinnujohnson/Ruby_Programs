@@ -20,3 +20,8 @@ loop do
   print i
   break if i == 0
 end
+
+18.downto(0) {|i|}
+next if i % 2 != 0
+print if i
+}
