@@ -9,3 +9,7 @@ until count == 15
   print "Ruby Programs"
   count +=1
 end
+
+for num in 1...10
+  puts num
+end
