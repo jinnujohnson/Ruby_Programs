@@ -1,6 +1,8 @@
 counter = 1
 count = 5
 i = 50
+my_array = [1,2,3,4,5]
+
 while counter < 20
   print "Ruby"
   counter += 1
@@ -25,3 +27,10 @@ end
 next if i % 2 != 0
 print if i
 }
+
+my_array.each do |x|
+  x += 10
+  print x
+end
+
+10.times {print "Thankyou"}
