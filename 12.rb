@@ -13,3 +13,11 @@ book_2 = "A brief history of time"
 
 puts book_1 <=> book_2
 
+books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brief History of Time", "A Wrinkle in Time"]
+
+books.sort! { |firstBook, secondBook| firstBook <=> secondBook } #Ascending sort
+books.each {|book| puts book}
+
+books.sort! { |firstBook, secondBook| secondBook <=> firstBook } #Descending sort
+books.each {|book| puts book}
+
