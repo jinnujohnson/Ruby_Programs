@@ -15,3 +15,28 @@ my_hash = Hash.new("Invalid Key")
   my_hash["three"] = 3
   print my_hash["four"]
 
+symbol_hash = { :one => 1, :two => 2, :three => 3 }
+
+puts symbol_hash
+
+strings = ["HTML", "JAVA", "CSS", "RUBY"]
+symbols = []
+symb = []
+
+strings.each do |s|
+symbols.push(s.to_sym)
+end
+
+strings.each do |s|
+s.downcase!
+symb.push(s.intern)
+end
+
+symb.each do |s|
+puts s.to_s
+end
+
+symbols.each do |s|
+puts s.to_s
+end
+
