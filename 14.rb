@@ -40,6 +40,11 @@ symbols.each do |s|
 puts s.to_s
 end
 
-num_hash = { one: 1, two: 2, three: 3} 
+num_hash = { one: 1, two: 2, three: 3 } 
 puts num_hash
+
+num_hash.select { |key, value| key == :three }
+ruby = matz.select { |key, value| value = 47 }
+puts ruby
+
 
