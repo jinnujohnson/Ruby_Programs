@@ -40,3 +40,6 @@ symbols.each do |s|
 puts s.to_s
 end
 
+num_hash = { one: 1, two: 2, three: 3} 
+puts num_hash
+
