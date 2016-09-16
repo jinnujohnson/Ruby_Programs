@@ -47,4 +47,6 @@ num_hash.select { |key, value| key == :three }
 ruby = matz.select { |key, value| value = 47 }
 puts ruby
 
+num_hash.each_key {|key| puts key," "}
+num_hash.each_value {|value| print value," "}
 
