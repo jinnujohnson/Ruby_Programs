@@ -1,4 +1,5 @@
 class Library
+  include Enumerable
   attr_reader :books
 
   def initialize
@@ -9,13 +10,12 @@ class Library
     @books << book unless @books.include?(book)
   end
 
-  def each
-    @books.each { |book| puts book } unless @books.empty?
+  def each &block
+    @books.each{ |book| block.call(book) }
   end
 end
 
 lib = Library.new
 lib.add_book('Book1')
 lib.add_book('Book2')
-puts lib.books
-lib.each
+lib.each{ |book| puts book }
