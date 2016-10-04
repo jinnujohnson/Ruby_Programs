@@ -10,8 +10,8 @@ class Library
     @books << book unless @books.include?(book)
   end
 
-  def each &block
-    @books.each{ |book| block.call(book) }
+  def each (&block)
+    @books.each(&block)
   end
 end
 
